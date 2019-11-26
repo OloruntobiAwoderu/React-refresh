@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Cardist from "./components/card-list"
 import './App.css';
 
 
@@ -21,9 +21,11 @@ class App extends React.Component {
   render() { 
     return ( 
       <div>
+        <Cardist>
         {this.state.monster.map(user => (
         <h1 key={user.id}>{user.name}</h1>
         ))}
+        </Cardist>
       </div>
      );
   }
