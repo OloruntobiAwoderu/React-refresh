@@ -12,7 +12,8 @@ const Div = styled.div`
 
 const CardList = props => {
   return (
-    <div>
+    <div className="App ">
+    
       <Div> {props.monster.map(monster => (
           <Card key={monster.id} monster={monster}/>
       ))}</Div>
