@@ -21,11 +21,8 @@ class App extends React.Component {
   render() { 
     return ( 
       <div>
-        <Cardist>
-        {this.state.monster.map(user => (
-        <h1 key={user.id}>{user.name}</h1>
-        ))}
-        </Cardist>
+        <Cardist monster={this.state.monster}/>
+    
       </div>
      );
   }
