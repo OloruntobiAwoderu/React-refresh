@@ -16,6 +16,9 @@ class App extends React.Component {
       .then(callback => this.setState({ monster: callback }));
   }
   render() {
+
+    const { monster, searchField } = this.state
+    const filteredMonsters = monster.filter(user => user.name.toLowerCase().includes(searchField.toLowerCase()) )
     return (
       <div className="App">
         <input
@@ -23,7 +26,7 @@ class App extends React.Component {
           placeholder="Search monsters"
           onChange={e => this.setState({ searchField: e.target.value })}
         />
-        <Cardist monster={this.state.monster} />
+        <Cardist monster={filteredMonsters} />
       </div>
     );
   }
