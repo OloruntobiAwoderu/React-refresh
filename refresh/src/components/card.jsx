@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const Div = styled.div`
+  margin: 40 40 40;
   display: flex;
   flex-direction: column;
   background-color: #95dada;
@@ -23,7 +24,7 @@ const Card = props => {
     <Div>
       <img
         alt="monster"
-        src={`https://robohash.org/${props.monster.id}?set=set2`}
+        src={`https://robohash.org/${props.monster.id}?set=set2&size=180x180`}
       />
 
       <h1>{props.monster.name}</h1>

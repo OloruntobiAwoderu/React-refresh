@@ -3,7 +3,7 @@ import Card from './card'
 import styled from "styled-components";
 
 const Div = styled.div`
-  width: 85vw;
+  padding: 40px 40px 40px 40px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -12,7 +12,7 @@ const Div = styled.div`
 
 const CardList = props => {
   return (
-    <div className="App ">
+    <div>
     
       <Div> {props.monster.map(monster => (
           <Card key={monster.id} monster={monster}/>
