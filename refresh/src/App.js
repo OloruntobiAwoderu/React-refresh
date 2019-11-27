@@ -35,6 +35,7 @@ class App extends React.Component {
     );
     return (
       <div className="App">
+        <h1>Monsters Rolodex</h1>
         <Input
           type="search"
           placeholder={`search monsters`}
